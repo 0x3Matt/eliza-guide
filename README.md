@@ -2,6 +2,38 @@
 
 Welcome to the Eliza OS Framework Developer Guide! This repository contains comprehensive documentation for building and extending the Eliza OS Framework, a powerful system for creating intelligent AI agents.
 
+## 🌟 Overview
+
+Eliza OS is a flexible, plugin-based framework for creating and deploying intelligent agents that can perform a wide range of tasks. This guide provides detailed documentation, workflows, and best practices for developers working with the framework.
+
+## 🏗️ Framework Architecture
+
+### Agent System Workflow
+
+```mermaid
+graph TB
+    A[Eliza Agent Core] -->|Loads| B{Plugin Manager}
+    B -->|Initializes| C[Base Plugins]
+    B -->|Loads| D[Custom Plugins]
+    B -->|Manages| E[External Integrations]
+    
+    C --> F[Core Capabilities]
+    D --> G[Extended Features]
+    E --> H[External Services]
+    
+    I{Agent Runtime} -->|Processes| J[Tasks]
+    I -->|Manages| K[State]
+    I -->|Handles| L[Communication]
+    
+    F & G & H --> I
+```
+
+### Core Components
+- **Agent Core**: Central processing unit
+- **Plugin System**: Extensible capability framework
+- **Runtime Environment**: Task execution and state management
+- **Integration Layer**: External system connectivity
+
 ## 📚 Documentation Structure
 
 Our documentation is organized into the following key sections:
